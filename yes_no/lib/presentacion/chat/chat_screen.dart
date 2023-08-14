@@ -24,14 +24,22 @@ class ChatScreen extends StatelessWidget {
 class _ChatView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Expanded(
-            child: Container(
-          color: Colors.red,
-        )),
-        Text('mundo')
-      ],
+    return SafeArea(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10),
+        child: Column(
+          children: [
+            Expanded(
+                child: ListView.builder(
+              itemCount: 100,
+              itemBuilder: (context, index) {
+                return Text('Indice: $index');
+              },
+            )),
+            Text('Mundo')
+          ],
+        ),
+      ),
     );
   }
 }
