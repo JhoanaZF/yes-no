@@ -17,7 +17,7 @@ class ChatScreen extends StatelessWidget {
               backgroundImage: NetworkImage(
                   'https://images4.alphacoders.com/130/1304411.jpeg'),
             )),
-        title: const Text('My Love❤️'),
+        title: const Text('Mi amor ♥️'),
         centerTitle: false,
       ),
       body: _ChatView(),
@@ -44,7 +44,6 @@ class _ChatView extends StatelessWidget {
             )),
             // Caja de texto de mensajes
             const MessageFieldBox(),
-            const Text('Mundo')
           ],
         ),
       ),
